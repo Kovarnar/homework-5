@@ -45,7 +45,7 @@ body {
 .main {
     color: #fff;
     padding: 20px 0 45px 0;
-    min-height: calc(100vh - length.header);
+    min-height: calc(100vh - 85px);
     background-color: #3B3F45;
 }
 .list {
@@ -54,7 +54,7 @@ body {
 .list-item {
     min-height: 45px;
     width: 100%;
-    padding: 0 9px;
+    padding: 0 12px;
     position: relative;
 }
 .list-item:nth-child(odd) {
@@ -67,7 +67,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 97%;
 }
 .lable span.item {
     display: inline-block;
@@ -114,8 +114,25 @@ input[type=checkbox]:checked + span {
     transform: translateY(-50%);
 }
 /*----------------------- checkbox -----------------------*/
-
-
+.lable input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.item::before {
+    position: relative;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 16px;
+    top: 4px;
+}
+input[type=checkbox]:checked + .item::before {
+    background: url(../img/icon-checked.png) center no-repeat;
+    background-color: #fff;
+}
 
 
 
