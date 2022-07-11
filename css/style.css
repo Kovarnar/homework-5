@@ -133,9 +133,6 @@ input[type=checkbox]:checked + .item::before {
     background: url(../img/icon-checked.png) center no-repeat;
     background-color: #fff;
 }
-
-
-
 /*----------------------- SCREEN -----------------------*/
 @media only screen and (min-width: 930px){
     body {font-size: 24px;}
