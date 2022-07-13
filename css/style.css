@@ -71,7 +71,8 @@ body {
     width: 97%;
 }
 .lable span.item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 span.item span{
     font-size: 0.55em;
@@ -127,7 +128,6 @@ input[type=checkbox]:checked + span {
     background-color: #fff;
     display: inline-block;
     margin-right: 16px;
-    top: 4px;
 }
 input[type=checkbox]:checked + .item::before {
     background: url(../img/icon-checked.png) center no-repeat;
