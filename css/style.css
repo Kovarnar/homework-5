@@ -8,6 +8,9 @@ screen {
 }
 body {
     font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3B3F45;
     border: 5px solid #fff;
 }
 .visually-hidden {
@@ -45,8 +48,6 @@ body {
 .main {
     color: #fff;
     padding: 20px 0 45px 0;
-    min-height: calc(100vh - 85px);
-    background-color: #3B3F45;
 }
 .list {
     margin: 0 0 45px 0;
@@ -71,7 +72,6 @@ body {
 }
 .lable span.item {
     display: inline-block;
-    line-height: 2.5;
 }
 span.item span{
     font-size: 0.55em;
@@ -134,15 +134,14 @@ input[type=checkbox]:checked + .item::before {
     background-color: #fff;
 }
 /*----------------------- SCREEN -----------------------*/
-@media only screen and (min-width: 930px){
+@media only screen and (min-width: 930px) {
     body {font-size: 24px;}
     .container {max-width: 750px;}
-    .list-item {min-height: 60px;}
+    .list-item {min-height: 60px; line-height: 2.5;}
     .wish {height: 60px;}
     .header h2 {padding: 30px 0 12px;}
     .header p {padding-bottom: 18px;}
     .main {
         padding: 30px 0 50px 0;
-        min-height: calc(100vh - 113.613px);
     }    
 }
