@@ -53,7 +53,7 @@ body {
     margin: 0 0 45px 0;
 }
 .list-item {
-    min-height: 45px;
+    height: 45px;
     width: 100%;
     padding: 0 12px;
     position: relative;
@@ -68,11 +68,13 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 97%;
+    width: 99%;
+    height: 100%;
 }
 .lable span.item {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 span.item span{
     font-size: 0.55em;
@@ -135,13 +137,10 @@ input[type=checkbox]:checked + .item::before {
 }
 /*----------------------- SCREEN -----------------------*/
 @media only screen and (min-width: 930px) {
-    body {font-size: 24px;}
+    body {font-size: 1.25rem}
     .container {max-width: 750px;}
-    .list-item {min-height: 60px; line-height: 2.5;}
-    .wish {height: 60px;}
     .header h2 {padding: 30px 0 12px;}
     .header p {padding-bottom: 18px;}
-    .main {
-        padding: 30px 0 50px 0;
+    .main {padding: 30px 0 50px 0;
     }    
 }
