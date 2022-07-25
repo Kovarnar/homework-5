@@ -5,8 +5,8 @@
 }
 body {
     font-size: 18px;
-    width: 100vw;
-    height: 100vh;
+    
+    min-height: 100vh;
     background-color: #3B3F45;
 }
 .visually-hidden {
@@ -32,7 +32,7 @@ body {
     padding: 24px 15px 12px;
 }
 .header h2 {
-    padding: 0 0 8px;
+    margin: 0 0 8px;
     font-weight: 700;
     font-size: 1.334em;
 }
@@ -86,7 +86,7 @@ span.item span:empty::after{
 span.item span:empty::before{
     content: "";
 }
-.list-item span:hover{
+.list-item:hover{
     background-color: #625E77;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
